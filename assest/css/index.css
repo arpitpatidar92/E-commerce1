@@ -1,0 +1,246 @@
+body,html{
+    position: relative;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+::selection{
+    background-color: #e73131;
+    color: white;
+}
+.navbar-brand{
+    color: white;
+}
+.fa-list{
+    color: #e73131;
+}
+.box1 ul li{
+    padding: 10px;
+}
+.anchor{
+    color: black !important;
+}
+.anchor.active {
+    color: #e73131 !important;
+}
+.anchor:hover{
+    color: #e73131 !important;
+}
+header .container-fluid{
+    margin: 0;
+    padding: 0;
+}
+header .main1{
+    background: rgba(0, 0, 0, 0.7) url("../image/xslide-01.jpg.pagespeed.ic.XotvXKn0Mi.webp") no-repeat center top/cover;
+    /* background-blend-mode: darken; */
+    width: 100%;
+    height: 650px;
+}
+#slider .carousel-control-prev{
+    width: 2%;
+}
+#slider .carousel-control-next{
+    width: 2%;
+}
+#slider .row{
+    padding: 250px 0 0 0;
+}
+#slider h2{
+    color: black;
+    font-size: 35px;
+}
+#slider h1{
+    color: black;
+    font-size: 55px;
+}
+#slider p{
+    color: black;
+    font-size: 20px;
+}
+header .main2{
+    background: rgba(0, 0, 0, 0.7) url("../image/xslide-02.jpg.pagespeed.ic.__MQeyG5T4.webp") no-repeat center top/cover;
+    /* background-blend-mode: darken; */
+    width: 100%;
+    height: 650px;
+}
+header .main3{
+    background: rgba(0, 0, 0, 0.7) url("../image/xslide-03.jpg.pagespeed.ic.tP-L47NU9M.webp") no-repeat center top/cover;
+    /* background-blend-mode: darken; */
+    width: 100%;
+    height: 650px;
+}
+/* ---section1--- */
+#section1 .box{
+    width: 300px;
+    height: 203px;
+    border: 1px solid gray;
+    /* display: flex; */
+}
+#section1 .box:hover{
+    box-shadow: 2px 2px 5px 5px gray;
+}
+#section1 img{
+    width: 100%;
+}
+#section1 h4{
+    position: absolute;
+    padding: 20px 20px 20px 2px;
+    font-weight: bold;
+
+}
+#section1 p{
+    position: absolute;
+    /* font-weight: bold; */
+    padding: 60px 20px 20px 20px;
+}
+#section1 .main1{
+    margin: 70px 0px 20px 0px;
+}
+#section2 .row{
+    margin: 50px 0 0 0 ;
+}
+#sectioin2 .card{
+    width: 200px;
+    height: 400px;
+}
+#section2 .card-body{
+    height: 270px;
+}
+#section2 .main11{
+    margin: 30px 0 0 0;
+
+}
+#showcartdiv{
+    /* width: 1000px; */
+    /* position: fixed; */
+    /* top: 50px; */
+    /* left: 200px; */
+    height: auto;
+    border: 1px solid;
+    background-color: white;
+    padding: 10px;
+    /* display: none; */
+
+}
+/* ---contect us section--- */
+#contact{
+    padding: 0 0 0px 0;
+}
+#contact h1{
+    text-align: center;
+    color: #555;
+    font-size: 35px;
+    padding: 60px 0 0px 0;
+}
+#contact .s1{
+    color: #e73131;
+}
+#contact hr{
+    width: 100px;
+    background-color: #e73131;
+    padding: .5px;
+}
+#contact .p1{
+    padding: 0 100px;
+    text-align: center;
+    font-weight: bold;
+}
+#contact .sub{
+    margin:20px 0 0 0 ;
+}
+#contact .comments{
+    margin: 20px 0;
+}
+#contact .btn-light{
+    border: 1px solid;
+}
+#contact span{
+    color: #666;
+    font-weight: bold;
+}
+/* ---banner section--- */
+#banner{
+    padding: 20px 0;
+    background-color: #e73131;
+    color: white;
+    text-align: center;
+}
+/* ---footer section--- */
+#follow{
+    padding: 0 0 0px 0;
+}
+#follow h1{
+    text-align: center;
+    color: #555;
+    font-size: 35px;
+    padding: 60px 0 0px 0;
+}
+#follow span{
+    color: #e73131;
+}
+#follow hr{
+    width: 100px;
+    background-color: #e73131;
+    padding: .5px;
+}
+#follow ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+}
+#follow .main{
+    width: 50px;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #999;
+    transition: all 0.4s ease-in-out;
+}
+#follow a{
+  color: #999;
+  font-size: 20px; 
+  transition: all 0.4s ease-in-out;
+}
+#follow .main:hover{
+    border: 3px solid #e73131;
+    box-shadow: 0 0 5px 2px gray;
+}
+#follow .main:hover a{
+    color: #e73131;
+}
+#follow .a1{
+    color: #337ab7;
+    font-size: 14px;
+}
+#follow p{
+    text-align: center;
+    font-size: 14px;
+}
+#cartsection1{
+    margin-top: 50px;
+}
+#bill{
+    padding: 20px;
+    margin: 20px;
+}
+#inp111{
+    width: 40px;
+    height: 30px;
+    font-size: 15px
+}
+.but1{
+    height: 30px;
+    /* width: 25px; */
+}
+#remo{
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    background-color: aqua;
+}

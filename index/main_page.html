@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="../assest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assest/css/index.css">
+    <link rel="stylesheet" href="../assest/css/media.css">
+    <link rel="stylesheet" href="../assest/css/animated.css">
+</head>
+<body>
+    <!-- nav-bar -->
+    <nav class="navbar navbar-expand-md fixed-top" id="menu">
+        <div class="container">
+            <!-- brand -->
+            <a href="" class="navbar-brand"><img src="../assest/image/download.webp" alt=""></a>
+            <!-- toggler navbar button -->
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+                <span class="navbar-toggler-icon"><i class="fas fa-list"></i></span>
+            </button>
+            <!-- collapseable menu -->
+            <div id="mynavbar" class="collapse navbar-collapse">
+                <!-- navbar link     -->
+                <ul class="navbar-nav">
+                    <li class="nav-item "><a href="" onclick="" class="nav-link anchor">Home</a></li>
+                    <li class="nav-item"><a id="men" href="#productsearch" class="nav-link anchor"  onclick="seprate(event)">Men</a></li>
+                    <li class="nav-item"><a id="women" href="#productsearch" class="nav-link anchor" onclick="seprate(event)">Women</a></li>
+                    <li class="nav-item"><a id="electronic" href="#productsearch" class="nav-link anchor" onclick="seprate(event)">Electronic</a></li>
+                    <li class="nav-item"><a id="jewelery" href="#productsearch" class="nav-link anchor" onclick="seprate(event)">Accessories</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link anchor">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="box1">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><input  type="text" id="searchpro"  class=""></li>
+                    <li class="nav-item"><button onclick="prosearch()" type="button" class="btn btn-primary"><i
+                                class="fa fa-search" aria-hidden="true"></i></button></li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary position-relative"
+                            onclick="viewcart()">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span id="cartno1"
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            </span>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary position-relative" data-toggle="modal" data-target="#ordered" onclick="profile()">
+                            <i class="fa fa-light fa-user"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="orderlist">
+                                
+                            </span>
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header section -->
+    <header id="slider">
+        <div class="container-fluid">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="main1">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6 wow bounceIn">
+                                        <h2>Women Collection 2022</h2>
+                                        <h1>NEW SEASON</h1>
+                                        <p>Coza – A One Page Parallax, HTML5 and Responsive Template suitable for any
+                                            creative business agency. Multiple pages also included in this theme with
+                                            lots of CSS and JQuery animations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="main2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6 wow bounceIn">
+                                        <h2>Men Collection 2022</h2>
+                                        <h1>JECKETS & COATS</h1>
+                                        <p>Coza - A One Page Parallax, HTML5 and Responsive Template suitable for any
+                                            creative business agency. Multiple pages also included in this theme with
+                                            lots of CSS and JQuery animations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="main3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6 wow bounceIn">
+                                        <h2>Season Coming Soon</h2>
+                                        <h1>NEW ARRIVALS</h1>
+                                        <p>Coza – A One Page Parallax, HTML5 and Responsive Template suitable for any
+                                            creative business agency. Multiple pages also included in this theme with
+                                            lots of CSS and JQuery animations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section id="section1">
+        <div class="container">
+            <div class="row main1">
+                <div class="col-lg-4" onclick="seprate(event)" id="women">
+                    <div class="box">
+                        <h4>Women spring</h4>
+                        <p>Spring 2022</p>
+                        <img src="../assest/image/xbanner-01.jpg.pagespeed.ic.Uj5FE94mgU.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4" onclick="seprate(event)" id="men">
+                    <div class="box">
+                        <h4>Men spring</h4>
+                        <p>Spring 2022</p>
+                        <img src="../assest/image/xbanner-02.jpg.pagespeed.ic.MQuZq6F18q.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4" onclick="seprate(event)" id="jewelery">
+                    <div class="box">
+                        <h4>Accessories</h4>
+                        <p>New Trend</p>
+                        <img src="../assest/image/xbanner-03.jpg.pagespeed.ic.1rqLomOaMb.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product show -->
+    <section id="section2">
+        <div class="container">
+            <div class="row" id="testing">
+            </div>
+            <div class="row" id="productsearch"></div>
+            <div>
+                <div id="showcart" class="modal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="protitle"></h5>
+                            </div>
+                            <div class="modal-body" id="per">
+                                <img src="" id="proimg" width="200" height="200" alt="">
+                                <h3 id="proprice"></h3>
+                                <h3 id="prorating"></h3>
+                                <h3 id="prodesc"></h3>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- buy now model -->
+    <section id="section3">
+        <div>
+            <div id="showbill" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="billtitle"></h5>
+                        </div>
+                        <div class="modal-body" id="per">
+                            <img src="" id="billimg" width="200" height="200" alt="">
+                            <h3 id="billprice"></h3>
+                            <h4 id="billdesc"></h4>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- address -->
+    <section id="section4">
+        <div>
+            <div id="addadd" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addtitle">Add Your Delivery Address</h5>
+                        </div>
+                        <div class="modal-body" id="per">
+                            <h3 id="addprice"></h3>
+                            <h6 id="adddesc"></h6>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- payment option -->
+    <section id="section5">
+        <div class="container">
+            <div>
+                <div id="paise" class="modal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="addtitle">Happy Shoping</h5>
+                            </div>
+                            <div class="modal-body" id="per">
+                                <h3 id="payprice">
+                                    <label for="cod">
+                                    <input type="radio" name="payme" id="cod"> Case On Delivery 
+                                </label> <br>
+                                <label for="cod">
+                                    <input type="radio" name="payme" id="cod"> UPI 
+                                </label> <br>
+                                <label for="cod">
+                                    <input type="radio" name="payme" id="cod"> Credit Card
+                                </label> <br>
+                                <label for="cod">
+                                    <input type="radio" name="payme" id="cod"> Debit Card 
+                                </label> <br>
+                                <button class="btn btn-danger" onclick="suce()">Procced</button>
+                                </h3>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- my orders -->
+    <section id="section6">
+        <div class="container">
+                <div>
+                    <div id="ordered" class="modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ordertitle">Happy Shoping</h5>
+                                </div>
+                                <div class="modal-body" id="per">
+                                    <h6 id="orderadd"></h6>
+                                    <div id="orderprice"></div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- contact section -->
+    <section id="contact">
+        <div class="container">
+            <h1>FEED<span class="s1">BACK</span></h1>
+            <hr>
+            <p class="p1"><span class="s1">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor
+                incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <div class="row">
+                <div class="col-lg-5">
+                    <p>CONTACT IN<span class="s1">FO</span></p>
+                    <p><i class="fas fa-map-marker-alt"></i><span>
+                            Address:</span> No 123 , Wallstreet, India</p>
+                    <p><i class="fas fa-envelope"></i><span> Mail Us:</span> Info@yourdomain.com</p>
+                    <p><i class="fas fa-mobile-alt"></i><span> Phone:</span> +91 123-456-7890</p>
+                    <p><i class="fas fa-comment"></i> <span> Website:</span> www.Cosmix.com</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="text" name="TXTName" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="col-lg-6 main">
+                            <input type="email" name="TXTEmail" class="form-control" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <input type="text" name="TXTSubject" class="form-control sub" placeholder="subject" required>
+                    <textarea name="comments" class="form-control comments" placeholder="comments" cols=""
+                        rows="5"></textarea>
+                    <div class="row">
+                        <div class="col-lg-12 form-group">
+                            <button class="btn btn-light" type="submit">send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- banner section -->
+    <section id="banner">
+        <div class="container">
+            <h2>LOOKING FORWARD TO HEARING FROM YOU!</h2>
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer id="follow">
+        <div class="container">
+            <h1>Follow Us <span> On </span></h1>
+            <hr>
+            <ul>
+                <div class="main wow rollIn">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                </div>
+                <div class="main wow rollIn">
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                </div>
+                <div class="main wow rollIn">
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </div>
+                <div class="main wow rollIn">
+                    <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                </div>
+                <div class="main wow rollIn">
+                    <li><a href=""><i class="fab fa-pinterest-square"></i></a></li>
+                </div>
+                <div class="main wow rollIn">
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                </div>
+                <div class="main wow rollIn">
+                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                </div>
+            </ul>
+            <p>© Copyright 2016 Cosmix - Created By : <a class="a1" href="#slider">Template Stock</a></p>
+        </div>
+    </footer>
+
+    <script src="../assest/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="../assest/js/Jquery.min.js"></script>
+    <script src="../assest/js/popper.min.js"></script>
+    <script src="../assest/js/bootstrap.min.js"></script>
+    <script src="../assest/js/a076d05399.js"></script>
+    <script src="../assest/js/index.js"></script>
+</body>
+</html>
